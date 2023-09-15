@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <span>Fruite</span>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="changes_img">
+          <ul>
+            <li>
+              <img
+                src="photos/butelke1.png"
+                class="changes_img_ani"
+                onclick="changeIMG('photos/butelke1.png'); changeColor('#ff3d6c');changeIMG2('photos/klubnyka.png');changeText('photos/text1.png')"
+              />
+            </li>
+            <li>
+              <img
+                src="photos/butelke2.jpeg"
+                class="changes_img_ani"
+                onclick="changeIMG('photos/butelke2.jpeg'); changeColor('#FFA31E');changeIMG2('photos/mandarin.png');changeText('photos/text2.png')"
+              />
+            </li>
+            <li>
+              <img
+                src="photos/butelke3.png"
+                class="changes_img_ani"
+                onclick="changeIMG('photos/butelke3.png'); changeColor('#A5F948');changeIMG2('photos/apple.png');changeText('photos/text3.png')"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text">
+          <img src="photos/text1.png" class="img_trans" />
+          <div class="cont_img">
+            <img src="photos/butelke1.png" class="butelke" />
+            <div class="effects">
+              <img src="photos/klubnyka.png" class="fruits" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function changeIMG(anything) {
+        document.querySelector(".butelke").src = anything;
+      }
+
+      function changeColor(color) {
+        const bod = document.querySelector("body");
+        bod.style.background = color;
+      }
+
+      function changeIMG2(im) {
+        document.querySelector(".fruits").src = im;
+      }
+
+      function changeText(t) {
+        document.querySelector(".img_trans").src = t;
+      }
+    </script>
+  </body>
+</html>

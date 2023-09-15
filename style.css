@@ -1,0 +1,121 @@
+@import url(./reset.css);
+
+/*fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@700;900&display=swap");
+
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* COLORS
+#A5F948    
+APPLE
+#FF3D6C
+KULPYNAI
+#FFA31E
+MANDARIN
+*/
+
+body {
+  background: #ff3d6c;
+
+  transition: 0.4s;
+}
+
+/* header  START */
+.container {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.container .header .logo {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  flex: 1;
+}
+
+.container .header .menu {
+  flex: 2;
+}
+.container .header .menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 54px;
+}
+.container .header .menu ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #fff;
+}
+
+.container .header .changes_img {
+  flex: 1;
+}
+
+.container .header .changes_img ul {
+  display: flex;
+  flex-direction: row;
+}
+.container .header .changes_img ul img {
+  width: 100px;
+  transition: 0.5s;
+}
+
+/* HEADER END  */
+
+/*  animations start */
+.changes_img_ani {
+  transform: rotate(-30deg);
+  cursor: pointer;
+}
+
+.container .header .changes_img ul img:hover {
+  transform: translate(0px, -10px);
+}
+
+/*  animations  end */
+
+/* CONTENT STAR */
+.container .content {
+  flex: 5;
+  text-align: center;
+}
+
+.container .content .text {
+  position: relative;
+}
+.img_trans {
+  transform: translate(0, 150%);
+}
+
+.container .content .cont_img img {
+  position: absolute;
+  top: -30%;
+  left: 20%;
+  bottom: 0;
+  right: 0;
+}
+.container .content .cont_img .effects img {
+  position: absolute;
+  top: 180%;
+  left: 77%;
+}
+/* CONTENT END */
